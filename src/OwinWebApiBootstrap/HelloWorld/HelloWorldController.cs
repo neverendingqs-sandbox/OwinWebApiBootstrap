@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace OwinWebApiBootstrap.HelloWorld {
-    public class HelloWorldController : ApiController {
+    public sealed class HelloWorldController : ApiController {
 
         public IHelloWorldResponse m_helloWorld { get; }
 

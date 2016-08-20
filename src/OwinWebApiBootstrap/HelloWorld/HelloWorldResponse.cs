@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OwinWebApiBootstrap.HelloWorld {
-    public class HelloWorldResponse : IHelloWorldResponse {
+    internal class HelloWorldResponse : IHelloWorldResponse {
         public string Hello { get; } = "World";
     }
 }

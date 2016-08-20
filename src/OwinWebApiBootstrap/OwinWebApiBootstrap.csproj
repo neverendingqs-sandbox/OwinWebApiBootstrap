@@ -107,6 +107,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\FriendAssemblies.cs" />
     <Compile Include="HelloWorld\HelloWorldResponse.cs" />
     <Compile Include="HelloWorld\HelloWorldController.cs" />
     <Compile Include="App\HelloWorldModule.cs" />
