@@ -8,10 +8,18 @@ using System.Web.Http;
 namespace OwinWebApiBootstrap.HelloWorld {
     public class HelloWorldController : ApiController {
 
+        public IHelloWorld m_helloWorld { get; }
+
+        public HelloWorldController(
+            IHelloWorld helloWorld
+        ) {
+            m_helloWorld = helloWorld;
+        }
+
         [HttpGet]
         [Route( "" )]
         public IHttpActionResult Hello() {
-            return Ok( "Hello!" );
+            return Ok( m_helloWorld.Hello() );
         }
     }
 }
