@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OwinWebApiBootstrap.HelloWorld {
-    public class HelloWorld : IHelloWorld {
-        public string Hello { get; } = "World";
+    public interface IHelloWorldResponse {
+
+        string Hello { get; }
     }
 }

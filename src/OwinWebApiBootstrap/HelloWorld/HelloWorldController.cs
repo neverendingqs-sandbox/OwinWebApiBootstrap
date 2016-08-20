@@ -8,17 +8,17 @@ using System.Web.Http;
 namespace OwinWebApiBootstrap.HelloWorld {
     public class HelloWorldController : ApiController {
 
-        public IHelloWorld m_helloWorld { get; }
+        public IHelloWorldResponse m_helloWorld { get; }
 
         public HelloWorldController(
-            IHelloWorld helloWorld
+            IHelloWorldResponse helloWorld
         ) {
             m_helloWorld = helloWorld;
         }
 
         [HttpGet]
         [Route( "" )]
-        public IHelloWorld Hello() {
+        public IHelloWorldResponse Hello() {
             return m_helloWorld;
         }
     }

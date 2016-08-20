@@ -9,9 +9,9 @@ using System.Reflection;
 using Ninject.Web.WebApi.OwinHost;
 using System.Net.Http.Formatting;
 
-[assembly: OwinStartup( typeof( OwinWebApiBootstrap.Startup ) )]
+[assembly: OwinStartup( typeof( OwinWebApiBootstrap.App.Startup ) )]
 
-namespace OwinWebApiBootstrap {
+namespace OwinWebApiBootstrap.App {
     public class Startup {
 
         public void Configuration( IAppBuilder appBuilder ) {
