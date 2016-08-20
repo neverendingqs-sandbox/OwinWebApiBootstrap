@@ -1,0 +1,8 @@
+version: 1.0.{build}
+
+before_build:
+  nuget restore src\OwinWebApiBootstrap.sln
+
+build:
+  verbosity: minimal
+  project: src\OwinWebApiBootstrap.sln
