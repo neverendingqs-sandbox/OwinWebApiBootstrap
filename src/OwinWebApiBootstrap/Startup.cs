@@ -7,6 +7,7 @@ using Ninject.Web.Common.OwinHost;
 using Ninject;
 using System.Reflection;
 using Ninject.Web.WebApi.OwinHost;
+using System.Net.Http.Formatting;
 
 [assembly: OwinStartup( typeof( OwinWebApiBootstrap.Startup ) )]
 
@@ -16,6 +17,9 @@ namespace OwinWebApiBootstrap {
         public void Configuration( IAppBuilder appBuilder ) {
             HttpConfiguration config = new HttpConfiguration();
             config.MapHttpAttributeRoutes();
+
+            config.Formatters.Clear();
+            config.Formatters.Add( new JsonMediaTypeFormatter() );
 
             appBuilder
                 .UseNinjectMiddleware( CreateKernel )

@@ -18,8 +18,8 @@ namespace OwinWebApiBootstrap.HelloWorld {
 
         [HttpGet]
         [Route( "" )]
-        public IHttpActionResult Hello() {
-            return Ok( m_helloWorld.Hello() );
+        public IHelloWorld Hello() {
+            return m_helloWorld;
         }
     }
 }

@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace OwinWebApiBootstrap.HelloWorld {
     public interface IHelloWorld {
 
-        string Hello();
+        string Hello { get; }
     }
 }
