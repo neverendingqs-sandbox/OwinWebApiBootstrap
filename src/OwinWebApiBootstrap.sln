@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinWebApiBootstrap", "Owin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinWebApiBootstrap.UnitTests", "OwinWebApiBootstrap.UnitTests\OwinWebApiBootstrap.UnitTests.csproj", "{94CE677A-FE58-453B-9CA0-B91A07F159CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinWebApiBootstrap.IntegrationTests", "OwinWebApiBootstrap.IntegrationTests\OwinWebApiBootstrap.IntegrationTests.csproj", "{C05DA4AD-DD62-4A15-A7E9-FD8FDF711141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{94CE677A-FE58-453B-9CA0-B91A07F159CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94CE677A-FE58-453B-9CA0-B91A07F159CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94CE677A-FE58-453B-9CA0-B91A07F159CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C05DA4AD-DD62-4A15-A7E9-FD8FDF711141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C05DA4AD-DD62-4A15-A7E9-FD8FDF711141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C05DA4AD-DD62-4A15-A7E9-FD8FDF711141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C05DA4AD-DD62-4A15-A7E9-FD8FDF711141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
