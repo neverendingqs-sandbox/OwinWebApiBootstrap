@@ -15,7 +15,7 @@ namespace OwinWebApiBootstrap.IntegrationTests.HelloWorld {
 
         [SetUp]
         public void SetUp() {
-            m_httpClient = SetUpFixture.GetSharedHttpClient();
+            m_httpClient = SetUpFixture.GetHttpClient();
         }
 
         [Test]
